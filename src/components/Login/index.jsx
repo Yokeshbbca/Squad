@@ -21,7 +21,7 @@ function Login() {
 
   return (
     <>
-      <div className="h-full lg:w-[1200] m-auto mt-20">
+      <div className="max-h-full lg:w-auto m-auto mt-20">
         <CardContent className="flex justify-center h-[470]">
           <Card className="bg-slate-700 flex justify-center rounded-r-none items-center border-none">
             <CardContent>

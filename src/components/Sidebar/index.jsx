@@ -121,7 +121,7 @@ function SidebarComponent({isActive}) {
                         <CircleEllipsis className="size-4"/>
                         <span>More</span>
                       </PopoverTrigger>
-                      <PopoverContent side="right" className="ml-2 w-[400] h-[400]">
+                      <PopoverContent side="right" className="ml-2 w-96 h-96">
                         <Command className="">
                           <CommandInput placeholder="Search" />
                           <div className="flex justify-between m-1 text-sm items-center">
