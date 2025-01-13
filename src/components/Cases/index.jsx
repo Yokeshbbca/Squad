@@ -1,3 +1,5 @@
+import Image from "next/image";
+import UnderConstruction from "../Images/Underconstruction.jpg"
 
 
 function Cases() {
@@ -5,7 +7,7 @@ function Cases() {
   return(
     <>
       <div className="flex justify-center">
-        <img src="/_next/static/media/Underconstruction.a83686b5.jpg" alt="" />
+        <Image src={UnderConstruction} alt="constructing process is going on..." />
       </div>
     </>
   )

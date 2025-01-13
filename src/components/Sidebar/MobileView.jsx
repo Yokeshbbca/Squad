@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Command, CommandInput } from "../ui/command";
 import { useState } from "react";
+import Image from "next/image";
+import Logo from "../Images/logo.png";
 
 function MobileView() { 
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +85,7 @@ function MobileView() {
         <SheetHeader>
           <SheetTitle className="text-white p-4 pl-0">
             <div className="flex gap-2">
-                <div><img src="/_next/static/media/logo.c3cc4a2b.png" alt="logo" /></div> 
+                <div><Image src={Logo} alt="logo" /></div> 
               </div>
           </SheetTitle>
         </SheetHeader>

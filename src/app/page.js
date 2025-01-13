@@ -16,9 +16,10 @@ import TravelIndex from "@/components/Layouts/TravelIndex";
 import TasksIndex from "@/components/Layouts/TasksIndex";
 import CompensationIndex from "@/components/Layouts/CompensationIndex";
 import GeneralIndex from "@/components/Layouts/GeneralIndex";
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { BrowserRouter as  Router, Route, Routes } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Loader2 } from "lucide-react";
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
 
   if(!isClient) {
     return (
-      <div>Loading...</div>
+      <Button variant="ghost"><Loader2 className="animate-spin"/> Loading...</Button>
     );
 
   }

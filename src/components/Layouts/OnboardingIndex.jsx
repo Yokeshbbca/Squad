@@ -9,7 +9,7 @@ import {useEffect, useState } from "react";
 import Onboarding from "@/components/Onboarding";
 
 export default function OnboardingIndex() {
-  const[width, setWidth] = useState(1200);
+  const[width, setWidth] = useState(window.innerwidth);
   const components = [
     {
     name: "My Organization",

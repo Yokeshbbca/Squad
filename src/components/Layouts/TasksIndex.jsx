@@ -10,7 +10,7 @@ import Tasks from "../Tasks";
 
 
 function TasksIndex() {
-  const[width, setWidth] = useState(1200);
+  const[width, setWidth] = useState(window.innerwidth);
   const components = [
     {
       name: "Tasks",
