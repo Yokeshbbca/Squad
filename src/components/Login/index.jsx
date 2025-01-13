@@ -21,8 +21,8 @@ function Login() {
 
   return (
     <>
-      <div className="max-h-full lg:w-auto m-auto mt-20">
-        <CardContent className="flex justify-center h-[470]">
+      <div className="flex justify-center lg:w-auto m-auto mt-5">
+        <CardContent className="flex justify-center min-h-fit">
           <Card className="bg-slate-700 flex justify-center rounded-r-none items-center border-none">
             <CardContent>
               <Image src={Logo} alt="" />
