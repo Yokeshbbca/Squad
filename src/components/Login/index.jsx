@@ -7,12 +7,16 @@ import { Checkbox } from "../ui/checkbox"
 import { Input } from "../ui/input"
 import { Label } from "../ui/label"
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import Logo from "../Images/logo.png"
 
 function Login() {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    document.title = "Login | Squad"
+  }, []);
 
   const loadingHandler = () => {
     setLoading(true);
@@ -24,7 +28,7 @@ function Login() {
       <div className="flex justify-center lg:w-auto m-auto mt-5">
         <CardContent className="flex justify-center min-h-fit">
           <Card className="bg-slate-700 flex justify-center rounded-r-none items-center border-none">
-            <CardContent>
+            <CardContent className="hidden md:block">
               <Image src={Logo} alt="" />
             </CardContent>
           </Card>

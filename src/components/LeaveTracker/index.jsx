@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import LeaveBalance from "./LeaveBalance";
 import LeaveRequest from "./LeaveRequest";
@@ -8,6 +8,11 @@ import Shift from "./Shift";
 
 function LeaveTracker() {
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+      document.title = "Leave Tracker | Squad"
+    }, [])
+
   const components = [
     {
       name : "Leave Summary",

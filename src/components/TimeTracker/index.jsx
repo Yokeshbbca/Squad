@@ -5,10 +5,15 @@ import TimeSheets from "./TimeSheets";
 import Jobs from "./Jobs";
 import Projects from "./Projects";
 import JobsSchedule from "./JobsSchedule";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function TimeTracker() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+      document.title = "Time Tracker | Squad"
+    }, [])
+
   const components = [
     {
       name: "Time Logs",

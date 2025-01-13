@@ -1,11 +1,16 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "../ui/button"
 import WithMe from "./WithMe"
 import WithRole from "./WithRole"
 
 function Files() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+      document.title = "Files | Squad"
+    }, [])
+
   const components = [
     {
       name: "Shared with Me",

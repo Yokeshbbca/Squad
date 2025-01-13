@@ -1,4 +1,5 @@
-import { useState } from "react"
+"use client"
+import { useEffect, useState } from "react"
 import GettingStarted from "./GettingStarted"
 import { Button } from "../ui/button";
 import Configuration from "./Configuration";
@@ -10,6 +11,11 @@ import Feedback from "./Feedback";
 
 function Performance() {
   const [showPage, setShowPage] = useState(false);
+
+  useEffect(() => {
+      document.title = "Performance | Squad"
+    }, [])
+
   const [index, setIndex] = useState(0)
   const navigationLists = [
     {

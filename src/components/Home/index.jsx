@@ -3,10 +3,15 @@ import { Button } from "../ui/button";
 import Overview from "./Overview";
 import Dashboard from "./Dashboard";
 import Calendar from "./Calendar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function HomePage() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+      document.title = "Home | Squad"
+    }, [])
+
   const components = [{
     id : 0,
     name : "Overview"

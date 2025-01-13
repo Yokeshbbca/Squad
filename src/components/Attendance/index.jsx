@@ -1,11 +1,16 @@
 "use client"
 import { Button } from "../ui/button"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AttendanceSummary from "./AttendanceSummary";
 import AttendanceShift from "./Shift";
 
 function Attendance() {
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+      document.title = "Attendance | Squad"
+    }, [])
+
   const components = [
     {
       name: "Attendance Summary",

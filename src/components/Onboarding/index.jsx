@@ -22,6 +22,10 @@ function Onboarding() {
     uan : undefined
   });
 
+  useEffect(() => {
+    document.title = "Onboarding | Squad"
+  }, [])
+
   const updatedDetails = (data) => {
     setCandidateDetails(data);
   }

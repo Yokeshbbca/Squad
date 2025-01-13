@@ -1,10 +1,15 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "../ui/button"
 import Surveys from "./Surveys"
 
 function EmployeeEngagement() {
   const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+      document.title = "Employee | Squad"
+    }, [])
+
   const components =[
     {
       name: "Surveys",

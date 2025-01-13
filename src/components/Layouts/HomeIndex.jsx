@@ -1,4 +1,3 @@
-"use client"
 
 import HeaderSection from "@/components/Header";
 import "../../app/globals.css";
